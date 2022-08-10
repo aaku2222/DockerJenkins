@@ -1,7 +1,6 @@
 properties([parameters([choice(choices: ['DOCKER'], name: 'APP'), choice(choices: ['STATUS', 'START', 'STOP', 'RESTART'], name: 'ACTIONS')])])
 pipeline {
     agent any
-
     stages {
         stage('DOCKER CONTAINER STATUS') {
             steps {
