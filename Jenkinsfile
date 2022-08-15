@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('DOCKER CONTAINER STATUS) {
             steps {
-                sh'/home/ubuntu/status.sh
+                sh'/home/ubuntu/jenkins_docker/status.sh
             }
         }
     }
