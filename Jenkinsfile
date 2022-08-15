@@ -4,9 +4,8 @@ pipeline {
     stages {
         stage('DOCKER CONTAINER STATUS) {
             steps {
-                sh'/home/ubuntu/jenkins_docker/status.sh' >> c
-                echo "c"
-                cat c
+                sh'/home/ubuntu/jenkins_docker/start.sh'
+                
             }
         }
     }
